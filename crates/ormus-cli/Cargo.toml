@@ -1,0 +1,13 @@
+[package]
+name = "ormus-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "ormus"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+ormus-core = { path = "../ormus-core" }
